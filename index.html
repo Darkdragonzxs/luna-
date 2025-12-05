@@ -11,14 +11,23 @@
 
   body {
     font-family: 'Poppins', sans-serif;
-    background: #0a0a0a;
-    color: #fff;
+    background: url("bg.gif") center/cover no-repeat fixed;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 20px;
+  }
+
+  .content {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 25px;
   }
 
   h1 {
@@ -27,7 +36,7 @@
   }
 
   p.instruction {
-    color: #888;
+    color: #ddd;
     margin-bottom: 20px;
     font-size: 1.2rem;
   }
@@ -37,7 +46,7 @@
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .game-card, .discord {
@@ -51,6 +60,7 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease, border-color 0.3s ease;
+    background: rgba(0,0,0,0.25);
   }
 
   .game-card img, .discord img {
@@ -60,59 +70,42 @@
     border-radius: 16px;
   }
 
-  .game-card:hover {
-    transform: scale(1.1);
-    border-color: #00ffff;
-  }
+  .game-card:hover { transform: scale(1.1); border-color: #00ffff; }
+  .discord:hover { transform: scale(1.1); border-color: #ff00ff; }
 
-  .discord:hover {
-    transform: scale(1.1);
-    border-color: #ff00ff;
-  }
-
-  .credit {
-    margin-top: 30px;
-    color: #666;
-    font-size: 0.85rem;
-  }
-
-  .credit a {
-    color: #999;
-    text-decoration: none;
-  }
-
-  .credit a:hover {
-    color: #fff;
+  pre {
+    color: #ccc;
+    margin-top: 10px;
   }
 </style>
 </head>
+
 <body>
 
-<h1>Luna</h1>
-<p class="instruction">Click a game to launch</p>
+<div class="content">
+  <h1>Luna</h1>
+  <p class="instruction">Click a game to launch</p>
 
-<div class="grid">
+  <div class="grid">
+    <a href="https://discord.gg/zxs" class="discord" target="_blank" rel="noopener">
+      <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/luna@main/disc.png">
+    </a>
 
-  <a href="https://discord.gg/zxs" class="discord" target="_blank" rel="noopener">
-    <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/luna@main/disc.png" alt="Discord">
-  </a>
+    <a href="/embed/roblox.html" class="game-card">
+      <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/calc-flood@main/pedos.png">
+    </a>
 
-  <a href="/embed/roblox.html" class="game-card">
-    <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/calc-flood@main/pedos.png" alt="Game">
-  </a>
+    <a href="/embed/fortnite.html" class="game-card">
+      <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/swfgames@master/fn.png">
+    </a>
 
-  <a href="/embed/fortnite.html" class="game-card">
-    <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/swfgames@master/fn.png" alt="Game">
-  </a>
+    <a href="/embed/clashroyale.html" class="game-card">
+      <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/swfgames@master/images.png">
+    </a>
+  </div>
 
-  <a href="/embed/clashroyale.html" class="game-card">
-    <img src="https://cdn.jsdelivr.net/gh/Darkdragonzxs/swfgames@master/images.png" alt="Game">
-  </a>
-
-
+  <pre>bypass by zxs</pre>
 </div>
-
-<pre>bypass by zxs</pre>
 
 </body>
 </html>
